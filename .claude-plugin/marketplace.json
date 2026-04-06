@@ -1,0 +1,30 @@
+{
+  "name": "xuanxuan-skills",
+  "owner": {
+    "name": "玄玄",
+    "email": "your-email@example.com"
+  },
+  "metadata": {
+    "description": "玄玄普拉提内容创作工具箱 - 基于 baoyu-skills 定制",
+    "version": "1.0.0",
+    "homepage": "https://github.com/yourname/xuanxuan-skills"
+  },
+  "plugins": [
+    {
+      "name": "xuanxuan-skills",
+      "description": "玄玄普拉提内容创作专用工具 - 小红书配图、封面设计、信息图、内容格式化",
+      "source": "./",
+      "strict": true,
+      "skills": [
+        "./skills/xuanxuan-xhs-images",
+        "./skills/xuanxuan-cover-image",
+        "./skills/xuanxuan-infographic",
+        "./skills/xuanxuan-format-markdown",
+        "./skills/xuanxuan-markdown-to-html",
+        "./skills/xuanxuan-translate",
+        "./skills/xuanxuan-youtube-transcript",
+        "./skills/xuanxuan-compress-image"
+      ]
+    }
+  ]
+}

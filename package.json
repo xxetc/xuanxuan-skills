@@ -1,0 +1,14 @@
+{
+  "name": "xuanxuan-skills",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "node ./scripts/run-node-tests.mjs"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.5"
+  }
+}
