@@ -243,11 +243,11 @@ Combine:
 
 ### Step 6: Generate Image
 
-1. Select available image generation skill (ask user if multiple)
+1. Default to ChatGPT / OpenAI image generation. Do NOT use nanobanana or another backend unless the user explicitly asks or ChatGPT/OpenAI is unavailable.
 2. **Check for existing file**: Before generating, check if `infographic.png` exists
    - If exists: Rename to `infographic-backup-YYYYMMDD-HHMMSS.png`
-3. Call with prompt file and output path
-4. On failure, auto-retry once
+3. Call ChatGPT / OpenAI image generation with the prompt file and output path
+4. On failure, auto-retry once with the same backend; only then consider asking about fallback backends
 
 ### Step 7: Output Summary
 

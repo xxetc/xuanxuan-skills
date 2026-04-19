@@ -9,7 +9,9 @@ description: EXTEND.md YAML schema for baoyu-cover-image user preferences
 
 ```yaml
 ---
-version: 3
+version: 4
+
+image_backend: chatgpt-openai  # default: chatgpt-openai; other backends only when explicitly requested
 
 watermark:
   enabled: false
@@ -48,7 +50,8 @@ custom_palettes:
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
-| `version` | int | 3 | Schema version |
+| `version` | int | 4 | Schema version |
+| `image_backend` | string | chatgpt-openai | Default image backend; use ChatGPT / OpenAI by default |
 | `watermark.enabled` | bool | false | Enable watermark |
 | `watermark.content` | string | "" | Watermark text (@username or custom) |
 | `watermark.position` | enum | bottom-right | Position on image |
@@ -148,7 +151,9 @@ custom_palettes:
 
 ```yaml
 ---
-version: 3
+version: 4
+
+image_backend: chatgpt-openai  # default: chatgpt-openai; other backends only when explicitly requested
 watermark:
   enabled: true
   content: "@myhandle"
@@ -165,7 +170,9 @@ quick_mode: false
 
 ```yaml
 ---
-version: 3
+version: 4
+
+image_backend: chatgpt-openai  # default: chatgpt-openai; other backends only when explicitly requested
 watermark:
   enabled: true
   content: "myblog.com"
@@ -205,7 +212,7 @@ When loading v2 schema, auto-upgrade:
 
 | v2 Field | v3 Field | Migration |
 |----------|----------|-----------|
-| `version: 2` | `version: 3` | Update |
+| `version: 2` | `version: 4` | Update |
 | `preferred_style` | `preferred_palette` + `preferred_rendering` | Use preset mapping table |
 | `custom_styles` | `custom_palettes` | Rename, restructure fields |
 

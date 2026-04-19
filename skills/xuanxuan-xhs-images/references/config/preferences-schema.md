@@ -9,7 +9,9 @@ description: EXTEND.md YAML schema for baoyu-xhs-images user preferences
 
 ```yaml
 ---
-version: 1
+version: 2
+
+image_backend: chatgpt-openai  # default: chatgpt-openai; other backends only when explicitly requested
 
 watermark:
   enabled: false
@@ -41,7 +43,8 @@ custom_styles:
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
-| `version` | int | 1 | Schema version |
+| `version` | int | 2 | Schema version |
+| `image_backend` | string | chatgpt-openai | Default image backend; use ChatGPT / OpenAI by default |
 | `watermark.enabled` | bool | false | Enable watermark |
 | `watermark.content` | string | "" | Watermark text (@username or custom) |
 | `watermark.position` | enum | bottom-right | Position on image |
@@ -77,7 +80,9 @@ custom_styles:
 
 ```yaml
 ---
-version: 1
+version: 2
+
+image_backend: chatgpt-openai  # default: chatgpt-openai; other backends only when explicitly requested
 watermark:
   enabled: true
   content: "@myusername"
@@ -90,7 +95,9 @@ preferred_style:
 
 ```yaml
 ---
-version: 1
+version: 2
+
+image_backend: chatgpt-openai  # default: chatgpt-openai; other backends only when explicitly requested
 watermark:
   enabled: true
   content: "@myxhsaccount"

@@ -122,3 +122,9 @@ GOOGLE_API_KEY=xxx
 ## License
 
 MIT-0 (保留 baoyu-skills 原许可证)
+
+
+## 图像生成后端
+
+默认使用 ChatGPT / OpenAI 图像生成作为生图后端。
+如需改用其他模型，再在任务里显式说明。

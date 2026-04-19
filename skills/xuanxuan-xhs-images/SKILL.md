@@ -471,9 +471,9 @@ This is critical for styles that use recurring characters, mascots, or illustrat
 **For each image (cover + content + ending)**:
 1. Save prompt to `prompts/NN-{type}-[slug].md` (in user's preferred language)
    - **Backup rule**: If prompt file exists, rename to `prompts/NN-{type}-[slug]-backup-YYYYMMDD-HHMMSS.md`
-2. Generate image:
-   - **Image 1**: Generate without `--ref` (this establishes the visual anchor)
-   - **Images 2+**: Generate with `--ref <image-01-path>` for consistency
+2. Generate image with ChatGPT / OpenAI image generation:
+   - **Image 1**: Generate without reference input first (this establishes the visual anchor)
+   - **Images 2+**: If the current ChatGPT/OpenAI host supports image reference input, pass `image-01` as reference; otherwise repeat the anchor style/character constraints verbatim in every prompt
    - **Backup rule**: If image file exists, rename to `NN-{type}-[slug]-backup-YYYYMMDD-HHMMSS.png`
 3. Report progress after each generation
 
@@ -485,9 +485,10 @@ The watermark should be legible but not distracting from the main content.
 ```
 Reference: `references/config/watermark-guide.md`
 
-**Image Generation Skill Selection**:
-- Check available image generation skills
-- If multiple skills available: ask user preference (interactive) or use first available skill (`--yes` mode)
+**Image Generation Backend Selection**:
+- Default to ChatGPT / OpenAI image generation for all pages in the series
+- Do NOT use nanobanana by default
+- Only ask about or switch to another backend if the user explicitly requests it or ChatGPT/OpenAI is unavailable
 
 **Session Management**:
 If image generation skill supports `--sessionId`:

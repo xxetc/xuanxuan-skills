@@ -196,11 +196,11 @@ Save to `prompts/cover.md`. Template: [references/workflow/prompt-template.md](r
 ### Step 4: Generate Image
 
 1. **Backup existing** `cover.png` if regenerating
-2. **Check image generation skills**; if multiple, ask preference
+2. **Backend default**: Use ChatGPT / OpenAI image generation first. Only ask about other image backends if the user explicitly requests a non-ChatGPT backend or ChatGPT is unavailable.
 3. **Process references** from prompt frontmatter:
-   - `direct` usage → pass via `--ref` (use ref-capable backend)
+   - `direct` usage → if the current ChatGPT/OpenAI host supports reference-image input, pass refs directly; otherwise convert the reference image into explicit textual constraints inside the prompt.
    - `style`/`palette` → extract traits, append to prompt
-4. **Generate**: Call skill with prompt file, output path, aspect ratio
+4. **Generate**: By default, call ChatGPT / OpenAI image generation with the prompt file, output path, and aspect ratio. Do NOT use nanobanana or other backends unless the user explicitly asks to switch.
 5. On failure: auto-retry once
 
 ### Step 5: Completion Report
