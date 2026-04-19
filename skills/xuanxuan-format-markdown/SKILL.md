@@ -1,10 +1,10 @@
 ---
 name: xuanxuan-format-markdown
-description: Formats plain text or markdown files with frontmatter, titles, summaries, headings, bold, lists, and code blocks. Use when user asks to "format markdown", "beautify article", "add formatting", or improve article layout. Outputs to {filename}-formatted.md.
+description: Formats plain text or markdown files with frontmatter, titles, summaries, headings, bold, lists, and code blocks. Use when user asks to "format markdown", "beautify article", "add formatting", "整理 markdown", "文章排版", "优化格式", or improve article layout. Outputs to {filename}-formatted.md.
 version: 1.57.0
 metadata:
   openclaw:
-    homepage: https://github.com/yourname/xuanxuan-skills#xuanxuan-format-markdown
+    homepage: https://github.com/xxetc/xuanxuan-skills#xuanxuan-format-markdown
     requires:
       anyBins:
         - bun

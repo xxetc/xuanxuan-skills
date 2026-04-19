@@ -1,10 +1,10 @@
 ---
 name: xuanxuan-markdown-to-html
-description: Converts Markdown to styled HTML with WeChat-compatible themes. Supports code highlighting, math, PlantUML, footnotes, alerts, infographics, and optional bottom citations for external links. Use when user asks for "markdown to html", "convert md to html", "md 转 html", "微信外链转底部引用", or needs styled HTML output from markdown.
+description: Converts Markdown to styled HTML with WeChat-compatible themes. Supports code highlighting, math, PlantUML, footnotes, alerts, infographics, and optional bottom citations for external links. Use when user asks for "markdown to html", "convert md to html", "md 转 html", "微信排版", "公众号排版", "微信外链转底部引用", or needs styled HTML output from markdown.
 version: 1.56.1
 metadata:
   openclaw:
-    homepage: https://github.com/yourname/xuanxuan-skills#xuanxuan-markdown-to-html
+    homepage: https://github.com/xxetc/xuanxuan-skills#xuanxuan-markdown-to-html
     requires:
       anyBins:
         - bun

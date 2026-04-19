@@ -1,10 +1,10 @@
 ---
 name: xuanxuan-cover-image
-description: Generates article cover images with 5 dimensions (type, palette, rendering, text, mood) combining 10 color palettes and 7 rendering styles. Supports cinematic (2.35:1), widescreen (16:9), and square (1:1) aspects. Use when user asks to "generate cover image", "create article cover", or "make cover".
+description: Generates article cover images with 5 dimensions (type, palette, rendering, text, mood) combining 10 color palettes and 7 rendering styles. Supports cinematic (2.35:1), widescreen (16:9), and square (1:1) aspects. Use when user asks to "generate cover image", "create article cover", "make cover", "生成封面图", "公众号封面", or "视频封面".
 version: 1.56.1
 metadata:
   openclaw:
-    homepage: https://github.com/yourname/xuanxuan-skills#xuanxuan-cover-image
+    homepage: https://github.com/xxetc/xuanxuan-skills#xuanxuan-cover-image
 ---
 
 # Cover Image Generator

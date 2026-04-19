@@ -1,10 +1,10 @@
 ---
 name: xuanxuan-compress-image
-description: Compresses images to WebP (default) or PNG with automatic tool selection. Use when user asks to "compress image", "optimize image", "convert to webp", or reduce image file size.
+description: Compresses images to WebP (default) or PNG with automatic tool selection. Use when user asks to "compress image", "optimize image", "convert to webp", "压缩图片", "减小图片体积", "转 webp", or reduce image file size before publishing.
 version: 1.56.1
 metadata:
   openclaw:
-    homepage: https://github.com/yourname/xuanxuan-skills#xuanxuan-compress-image
+    homepage: https://github.com/xxetc/xuanxuan-skills#xuanxuan-compress-image
     requires:
       anyBins:
         - bun

@@ -4,13 +4,29 @@
 
 ## 安装
 
+### 通用安装（Codex / Claude Code / skills CLI）
+
 ```bash
-npx skills add yourname/xuanxuan-skills
+npx skills add xxetc/xuanxuan-skills
 ```
 
-或在 Claude Code 中：
+### Hermes
+
+如果你希望 Hermes 在后续会话里也能自动发现并按需调用这些 skills，安装后再执行：
+
+```bash
+python3 ~/.hermes/scripts/refresh_skill_snapshot.py
 ```
-/plugin marketplace add yourname/xuanxuan-skills
+
+如果你已经安装了我提供的包装命令，也可以直接：
+
+```bash
+hermes-skills-add xxetc/xuanxuan-skills
+```
+
+### Claude Code
+```
+/plugin marketplace add xxetc/xuanxuan-skills
 /plugin install xuanxuan-skills@xuanxuan-skills
 ```
 

@@ -1,10 +1,10 @@
 ---
 name: xuanxuan-xhs-images
-description: 玄玄普拉提小红书图文生成器。基于 baoyu-skills 定制，专为普拉提内容优化。支持玄玄专属视觉风格（warm/notion/fresh），自动匹配普拉提内容类型。当用户说"生成小红书图片"、"做小红书配图"、"普拉提图文"、"内容可视化"时触发。
+description: 玄玄普拉提小红书图文生成器。基于 baoyu-skills 定制，专为普拉提内容优化。支持玄玄专属视觉风格（warm/notion/fresh），自动匹配普拉提内容类型。当用户说"生成小红书图片"、"做小红书配图"、"普拉提图文"、"内容可视化"、"小红书封面"、"小红书图文"时触发。Use when the user wants Xiaohongshu/RED visual assets for Pilates or wellness content.
 version: 1.0.0
 metadata:
   openclaw:
-    homepage: https://github.com/yourname/xuanxuan-skills#xuanxuan-xhs-images
+    homepage: https://github.com/xxetc/xuanxuan-skills#xuanxuan-xhs-images
     based_on: baoyu-skills by Jim Liu
 ---
 
